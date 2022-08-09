@@ -1,0 +1,1 @@
+copy C:\Users\Admin\AppData\Roaming\Google\AndroidStudio2021.2\templates\Flutter.xml D:\Codigos\templates_android_studio\Flutter

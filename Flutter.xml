@@ -1,0 +1,259 @@
+<templateSet group="Flutter">
+  <template name="paddsymetry" value="Padding(&#10;  padding: EdgeInsets.symmetric(horizontal: 16, vertical: 0),&#10;  child: $child$&#10;)," description="Padding componet" toReformat="false" toShortenFQNames="true">
+    <variable name="child" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="appstart" value="import 'package:flutter/material.dart';&#10;&#10;void main() {&#10;  runApp(const MyApp());&#10;}&#10;&#10;class MyApp extends StatelessWidget {&#10;  const MyApp({Key? key}) : super(key: key);&#10;&#10;  @override&#10;  Widget build(BuildContext context) {&#10;    return MaterialApp(&#10;      debugShowCheckedModeBanner: false,&#10;      theme: ThemeData(&#10;        primarySwatch: Colors.blue,&#10;      ),&#10;      home: home(),&#10;    );&#10;  }&#10;}&#10;&#10;class home extends StatefulWidget {&#10;  const home({Key? key}) : super(key: key);&#10;&#10;  @override&#10;  State&lt;home&gt; createState() =&gt; _homeState();&#10;}&#10;&#10;class _homeState extends State&lt;home&gt; {&#10;  @override&#10;  Widget build(BuildContext context) {&#10;    return Scaffold(&#10;      body: $child$&#10;    );&#10;  }&#10;}&#10;&#10;&#10;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="child" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="fullwidth" value="width: MediaQuery.of(context).size.width," description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="fullsize" value="width: MediaQuery.of(context).size.width,&#10;height: MediaQuery.of(context).size.height * 1," description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="image_backgroaund" value="image: DecorationImage(fit: BoxFit.cover,image: Image.asset('assets/images/$Name$',).image,)" description="Add BackGround Image" toReformat="false" toShortenFQNames="true">
+    <variable name="Name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="txt_GoogleFonts" value="Text('$Name$',style: GoogleFonts.getFont('Montserrat',color: Colors.$color$,fontWeight: FontWeight.w$weight$,fontSize: $size$,),)," description="Google Fonts Text" toReformat="false" toShortenFQNames="true">
+    <variable name="Name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="color" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="weight" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="size" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="txt" value="Text('$text$', style: TextStyle(color: Colors.$color$, fontSize: $size$, fontWeight: FontWeight.w$weight$),)," description="Text" toReformat="false" toShortenFQNames="true">
+    <variable name="text" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="color" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="size" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="weight" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="border_radius" value="borderRadius: BorderRadius.circular($border$)," description="" toReformat="false" toShortenFQNames="true">
+    <variable name="border" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="border_solid" value="border: Border.all(color: Colors.$color$,width: 1,)," description="" toReformat="false" toShortenFQNames="true">
+    <variable name="color" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="icon" value="Icon(Icons.$icon$,color: Colors.$color$,size: $size$,)," description="" toReformat="false" toShortenFQNames="true">
+    <variable name="icon" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="color" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="size" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="inkwell_to_page" value="InkWell(&#10;   onTap: () async {&#10;      await Navigator.push(&#10;          context,&#10;          MaterialPageRoute(&#10;              builder: (context) =&gt; $route$(),&#10;          ),&#10;        );&#10;        },&#10;       child: $child$&#10; )," description="" toReformat="false" toShortenFQNames="true">
+    <variable name="route" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="child" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="color_exagesimal" value="color: Color(0x00$color$)" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="color" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="list_with_padding" value="Padding(&#10;  padding: EdgeInsetsDirectional.fromSTEB(16, 0, 16, 0),&#10;  child: ListView(&#10;    shrinkWrap: false,&#10;    children: [&#10;      &#10;    ],&#10;  ),&#10;)," description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="alg" value="mainAxisAlignment: MainAxisAlignment.$space$,&#10;crossAxisAlignment: CrossAxisAlignment.$space2$," description="" toReformat="false" toShortenFQNames="true">
+    <variable name="space" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="space2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="list_builder_filter" value="ListView.builder(&#10;    shrinkWrap: true,&#10;    itemCount: items.length,&#10;    itemBuilder: (BuildContext context, int index) {&#10;        final item = items[index];&#10;        if (items[index].CategoriData == 'mountains') {&#10;            return ItemWidgetList(context, item);&#10;        } else {&#10;            return Nada();&#10;        }&#10;},&#10;))," description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="list_builder" value="ListView.builder(&#10;    shrinkWrap: true,&#10;    itemCount: items.length,&#10;    itemBuilder: (BuildContext context, int index) {&#10;        final item = items[index];&#10;        return ItemWidgetList(context, item);&#10;},&#10;))," description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="data_class_model" value="class Itemsdata {&#10;  String TitleData;&#10;  String SubTitleData;&#10;  String DescriptionData;&#10;  String FotoData;&#10;&#10;  Itemsdata(&#10;      {required this.TitleData,&#10;      required this.SubTitleData,&#10;      required this.DescriptionData,&#10;      required this.FotoData});&#10;}&#10;" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="data_class" value="import 'model.dart';&#10;&#10;List&lt;Itemsdata&gt; ListItems = [&#10;&#10;  Itemsdata(&#10;      TitleData: ' 1',&#10;      SubTitleData: '1 Subtitle',&#10;      DescriptionData: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the',&#10;      FotoData: 'assets/images/.jpg'&#10;  ),&#10;&#10;  Itemsdata(&#10;      TitleData: ' 1',&#10;      SubTitleData: '1 Subtitle',&#10;      DescriptionData: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the',&#10;      FotoData: 'assets/images/.jpg'&#10;  ),&#10;&#10;  Itemsdata(&#10;      TitleData: ' 1',&#10;      SubTitleData: '1 Subtitle',&#10;      DescriptionData: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the',&#10;      FotoData: 'assets/images/.jpg'&#10;  ),&#10;&#10;  Itemsdata(&#10;      TitleData: ' 1',&#10;      SubTitleData: '1 Subtitle',&#10;      DescriptionData: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the',&#10;      FotoData: 'assets/images/.jpg'&#10;  ),&#10;  &#10;&#10;];" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="itemlist_by_dataClass" value="import 'package:flutter/material.dart';&#10;&#10;import '../data/model.dart';&#10;&#10;class ItemList extends StatefulWidget {&#10;&#10;  const ItemList({Key? key, required this.Item}) : super(key: key);&#10;&#10;  final Itemsdata Item;&#10;&#10;  @override&#10;  State&lt;ItemList&gt; createState() =&gt; _ItemListState();&#10;}&#10;&#10;class _ItemListState extends State&lt;ItemList&gt; {&#10;&#10;  @override&#10;  Widget build(BuildContext context) {&#10;    return Row(&#10;      mainAxisSize: MainAxisSize.max,&#10;      children: [&#10;        Padding(&#10;          padding:&#10;          EdgeInsetsDirectional.fromSTEB(16, 16, 16, 16),&#10;          child: Container(&#10;            width: 80,&#10;            height: 80,&#10;            decoration: BoxDecoration(&#10;              image: DecorationImage(&#10;                fit: BoxFit.cover,&#10;                image: Image.asset(&#10;                  widget.Item.FotoData,&#10;                ).image,&#10;              ),&#10;              borderRadius: BorderRadius.circular(12),&#10;            ),&#10;          ),&#10;        ),&#10;        Column(&#10;          mainAxisSize: MainAxisSize.max,&#10;          crossAxisAlignment: CrossAxisAlignment.start,&#10;          children: [&#10;            Text(&#10;              widget.Item.TitleData,&#10;            ),&#10;            Text(&#10;              widget.Item.SubTitleData,&#10;            ),&#10;          ],&#10;        ),&#10;      ],&#10;    );&#10;  }&#10;}&#10;" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="data_class_init" value="late List&lt;Itemsdata&gt; items;&#10;@override&#10;void initState() {&#10;  items = ListItems;&#10;}&#10;" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="itemlist_inkWell" value="child: InkWell(&#10;    onTap: () =&gt; Navigator.of(context).push(MaterialPageRoute(&#10;    builder: (BuildContext context) =&gt; placemakup(Item: item),&#10;    )),&#10;    child: ItemList(Item: item))," description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="horizontal_slider" value="Column(&#10;  mainAxisSize: MainAxisSize.max,&#10;  children: [&#10;    Row(&#10;      mainAxisSize: MainAxisSize.max,&#10;      children: [&#10;        Container(&#10;          width: MediaQuery.of(context).size.width,&#10;          height: 260,&#10;          child: ListView(&#10;            shrinkWrap: true,&#10;            scrollDirection: Axis.horizontal,&#10;            children: [&#10;              SizedBox(width: 8,),&#10;              //Start Item Slider&#10;              Padding(&#10;                padding: EdgeInsetsDirectional.fromSTEB(8, 8, 8, 8),&#10;                child: InkWell(&#10;                  onTap: () async {},&#10;                  child: Container(&#10;                    width: 200,&#10;                    decoration: BoxDecoration(&#10;                      color: Color(0xFFEEF0FB),&#10;                      boxShadow: [&#10;                        BoxShadow(&#10;                          blurRadius: 4,&#10;                          color: Color(0x334F4667),&#10;                          offset: Offset(0, 2),&#10;                        )&#10;                      ],&#10;                      borderRadius: BorderRadius.circular(8),&#10;                      border: Border.all(&#10;                        color: Color(0xFFD7D3E3),&#10;                        width: 1,&#10;                      ),&#10;                    ),&#10;                    child: Padding(&#10;                      padding: EdgeInsetsDirectional.fromSTEB(16, 16, 16, 16),&#10;                      child: Column(&#10;                        mainAxisSize: MainAxisSize.max,&#10;                        mainAxisAlignment: MainAxisAlignment.end,&#10;                        crossAxisAlignment: CrossAxisAlignment.start,&#10;                        children: [&#10;                          Text(&#10;                            'Title',&#10;                            style: TextStyle(&#10;                              fontWeight: FontWeight.bold,&#10;                              fontSize: 16,&#10;                            ),&#10;                          ),&#10;                          Text(&#10;                            'SubTitle',&#10;                            style: TextStyle(&#10;                              fontWeight: FontWeight.normal,&#10;                              fontSize: 14,&#10;                            ),&#10;                          ),&#10;                        ],&#10;                      ),&#10;                    ),&#10;                  ),&#10;                ),&#10;              ),&#10;              //End Item Slider&#10;            ],&#10;          ),&#10;        ),&#10;      ],&#10;    ),&#10;  ],&#10;)," description="Slider Horizontal native" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="image_background_BoxDecoration" value="decoration: BoxDecoration(image: DecorationImage(fit: BoxFit.cover,image: Image.asset('assets/images/$Name$',).image,),)," description="" toReformat="false" toShortenFQNames="true">
+    <variable name="Name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="boxDecoration:color_shadow_dorder" value="decoration: BoxDecoration(&#10;    color: Color(0xFFEEF0FB),&#10;    boxShadow: [&#10;      BoxShadow(&#10;        blurRadius: 4,&#10;        color: Color(0x334F4667),&#10;        offset: Offset(0, 2),&#10;      ),&#10;    ],&#10;    borderRadius: BorderRadius.circular(8),&#10;    border: Border.all(&#10;      color: Color(0xFFD7D3E3),&#10;      width: 1,&#10;    ),&#10;)," description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="appbar_custom" value="Row(&#10;  mainAxisSize: MainAxisSize.max,&#10;  children: [&#10;    InkWell(&#10;      onTap: () async {&#10;        Navigator.pop(context);&#10;      },&#10;      child: Column(&#10;        mainAxisSize: MainAxisSize.max,&#10;        children: [&#10;          Padding(&#10;            padding: EdgeInsetsDirectional.fromSTEB(16, 16, 16, 16),&#10;            child: Icon(&#10;              Icons.chevron_left,&#10;              color: Colors.black,&#10;              size: 24,&#10;            ),&#10;          ),&#10;        ],&#10;      ),&#10;    ),&#10;    Column(&#10;      mainAxisSize: MainAxisSize.max,&#10;      children: [&#10;        Text(&#10;          '$Title$',&#10;          style: TextStyle(&#10;            fontWeight: FontWeight.bold,&#10;            fontSize: 14,&#10;          ),&#10;        ),&#10;        Text(&#10;          '$Subitle$',&#10;          style: TextStyle(&#10;            fontSize: 12,&#10;          ),&#10;        ),&#10;      ],&#10;    ),&#10;  ],&#10;)" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="Title" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="Subitle" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="col" value="Column(&#10;  children: [&#10;    $child$&#10;  ],&#10;)" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="child" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="row" value="Row(&#10;  children: [&#10;    $child$&#10;  ],&#10;)" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="child" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="boxshadow_custom" value="boxShadow: [&#10;    BoxShadow(&#10;        blurRadius: 4,&#10;        color: Color(0x334F4667),&#10;        offset: Offset(0, 2),&#10;    ),&#10;]," description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="cont_custom" value="Container(&#10;  width: double.infinity,&#10;  decoration: BoxDecoration(&#10;    color: Color(0xFFEEF0FB),&#10;  ),&#10;  child: Padding(&#10;    padding: EdgeInsets.symmetric(horizontal: $sixed1$, vertical: $sized2$),&#10;    child: Column(&#10;      children: [&#10;          $child$&#10;      ],&#10;    ),&#10;  )&#10;)," description="" toReformat="false" toShortenFQNames="true">
+    <variable name="sixed1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="sized2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="child" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="list_custom" value="ListView(&#10;  shrinkWrap: true,&#10;  primary: false,&#10;  scrollDirection: Axis.vertical,&#10;  children: [&#10;    $child$&#10;  ],&#10;)" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="child" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="color_constrains" value="import 'package:flutter/material.dart';&#10;&#10;const kBackgroundColor = Color(0xffF6F6F6);&#10;const kAccentColor = Color(0xff03A5E1);&#10;const kBlackColor = Color(0xFF212121);&#10;const kGreyColor = Color(0x50212121);&#10;const kWhiteColor = Color(0xFFFFFFFF);&#10;const kWhiteGreyColor = Color(0xFFF9F9F9);&#10;const kGreenColor = Color(0xFF36B552);&#10;const kOrangeColor = Color(0xFFFF9C41);&#10;const kBlueColor = Color(0xFF3B64F4);&#10;const kJeniusCardColor = Color(0xFF03A5e1);&#10;const kMasterCardColor = Color(0xFFFFFFFF);&#10;const kGradientSlideButton = [const Color(0xFF3B64F4), const Color(0xFF6822FD)];&#10;&#10;&#10;// for use :&#10;//theme: ThemeData(&#10;  //accentColor: kAccentColor,&#10;  //backgroundColor: kBackgroundColor&#10;//)," description="constantes of colors" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="appstart_responsive" value="import 'package:flutter/material.dart';&#10;&#10;void main() {&#10;  runApp(const MyApp());&#10;}&#10;&#10;class MyApp extends StatelessWidget {&#10;  const MyApp({Key? key}) : super(key: key);&#10;&#10;  @override&#10;  Widget build(BuildContext context) {&#10;    return MaterialApp(&#10;      debugShowCheckedModeBanner: false,&#10;      theme: ThemeData(&#10;        primarySwatch: Colors.blue,&#10;      ),&#10;      home: home(),&#10;    );&#10;  }&#10;}&#10;&#10;class home extends StatefulWidget {&#10;  const home({Key? key}) : super(key: key);&#10;  @override&#10;  State&lt;home&gt; createState() =&gt; _homeState();&#10;}&#10;&#10;class _homeState extends State&lt;home&gt; {&#10;  @override&#10;  Widget build(BuildContext context) {&#10;    return Scaffold(&#10;      body: LayoutBuilder(&#10;        builder: (context, constraints){&#10;          if (constraints.maxWidth &gt; 600) {&#10;            return WideLayout();&#10;          } else {&#10;            return NarrowLayout();&#10;          }&#10;        },&#10;      ),&#10;    );&#10;  }&#10;}&#10;&#10;class WideLayout extends StatelessWidget {&#10;  @override&#10;  Widget build(BuildContext context) {&#10;    return const Center(&#10;      child: Text('Hi this is the fisrts text'),&#10;    );&#10;  }&#10;}&#10;&#10;class NarrowLayout extends StatelessWidget {&#10;  @override&#10;  Widget build(BuildContext context) {&#10;    return const Center(&#10;      child: Text('Hi this is the second text'),&#10;    );&#10;  }&#10;}&#10;" description="Web template responsive" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="image_custom" value="Image.asset(&#10;  'assets/images/$image$',&#10;  width: 600,&#10;  height: 240,&#10;  fit: BoxFit.cover,&#10;)" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="image" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="drawer_menu_widget" value="Widget menuDrawer(BuildContext context){&#10;  return Drawer(&#10;    child: ListView(&#10;      padding: EdgeInsets.zero,&#10;      children: &lt;Widget&gt;[&#10;        Container(&#10;          color: Theme.of(context).primaryColor,&#10;          child: const DrawerHeader(&#10;            child: Text(&#10;              'Navigation Drawer',&#10;              style: TextStyle(&#10;                fontSize: 20,&#10;              ),&#10;            )&#10;            ),&#10;        ),&#10;        ListTile(&#10;          leading: Icon(Icons.home),&#10;          title: Text('Firts Screen'),&#10;          onTap: (){},  &#10;        ),&#10;        ListTile(&#10;          leading: Icon(Icons.favorite),&#10;          title: Text('Second Screen'),&#10;          onTap: (){},  &#10;        ),&#10;      ],&#10;    ),&#10;  );&#10;}&#10;" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="routes_template" value="import 'package:flutter/material.dart';&#10;&#10;var customRouters = &lt;String, WidgetBuilder&gt;{&#10;  '/': (context) =&gt; $home$(),&#10;  //'/second':(context) =&gt; secondScreen(),&#10;};&#10;&#10;&#10;// use:&#10;//Widget build(BuildContext context) {&#10;  //return MaterialApp(&#10;    //initialRoute: '/',&#10;    //routes: customRouters,&#10;  //);&#10;//}" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="home" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="opendrawer_whiticon_templarte" value="import 'package:flutter/material.dart';&#10;import '../drawer.dart';&#10;&#10;class firtScreen extends StatelessWidget{ &#10;&#10;  final GlobalKey&lt;ScaffoldState&gt; _scaffoldKey = new GlobalKey&lt;ScaffoldState&gt;();&#10;&#10;&#10;  @override&#10;  Widget build(BuildContext context){&#10;&#10;    return Scaffold(   &#10;        key: _scaffoldKey,&#10;        drawer: menuDrawer(context),&#10;        body: Column(&#10;            crossAxisAlignment: CrossAxisAlignment.start,&#10;            children: &lt;Widget&gt;[&#10;              IconButton(&#10;                padding: const EdgeInsets.all(20),&#10;                icon: const Icon(Icons.menu),&#10;                onPressed: () =&gt; _scaffoldKey.currentState?.openDrawer(),&#10;              ),  &#10;              const Expanded(&#10;                child: Center(&#10;                child: Text(&#10;                  &quot;Firts Screen&quot;,&#10;                  textAlign: TextAlign.center,&#10;                  style: TextStyle(&#10;                    fontSize: 20&#10;                  ),&#10;                ),&#10;              ),            &#10;              )    &#10;            ],            &#10;        ),        &#10;    );&#10;  }&#10;}&#10;" description="(how to open drawer with a icon)" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="theme_ligth_dark_template_externalfont" value="theme: ThemeData(&#10;        backgroundColor: BackgroundColor,&#10;        primaryColor: AccentColor,&#10;        cardColor: SecondColor,&#10;        splashColor: FontColor,&#10;        textTheme: const TextTheme(&#10;          headline1: TextStyle(&#10;              fontSize: 22.0,&#10;              color: FontColor,&#10;              letterSpacing: -1.4,&#10;              fontFamily: 'segoeui-bold'&#10;          ),&#10;          headline2: TextStyle(&#10;              fontSize: 14.0,&#10;              color: FontColorGrey,&#10;              letterSpacing: -1,&#10;              fontFamily: 'segoeui-bold'&#10;          ),&#10;          headline3: TextStyle(&#10;              fontSize: 16.0,&#10;              color: FontColor,&#10;              letterSpacing: -0.5,&#10;              fontFamily: 'segoeui-semibold',&#10;              height: 2&#10;          ),&#10;          bodyText1: TextStyle(&#10;              fontSize: 15.0,&#10;              color: FontColor,&#10;              letterSpacing: -0.4,&#10;              fontFamily: 'segoeui-bold',&#10;              height: 2&#10;          ),&#10;          bodyText2: TextStyle(&#10;              fontSize: 14.0,&#10;              color: FontColorGrey,&#10;              letterSpacing: -0.4,&#10;              fontFamily: 'segoeui-bold',&#10;              height: 1.5&#10;          ),&#10;        ),&#10;      ),&#10;      darkTheme: ThemeData(&#10;        backgroundColor: DBackgroundColor,&#10;        primaryColor: DAccentColor,&#10;        cardColor: DSecondColor,&#10;        splashColor: DFontColor,&#10;        textTheme: const TextTheme(&#10;          headline1: TextStyle(&#10;              fontSize: 22.0,&#10;              color: DFontColor,&#10;              letterSpacing: -1.4,&#10;              fontFamily: 'segoeui-bold'&#10;          ),&#10;          headline2: TextStyle(&#10;              fontSize: 14.0,&#10;              color: DFontColorGrey,&#10;              letterSpacing: -1,&#10;              fontFamily: 'segoeui-bold'&#10;          ),&#10;          headline3: TextStyle(&#10;              fontSize: 16.0,&#10;              color: DFontColor,&#10;              letterSpacing: -0.5,&#10;              fontFamily: 'segoeui-regular',&#10;              height: 2&#10;          ),&#10;          bodyText1: TextStyle(&#10;              fontSize: 15.0,&#10;              color: DFontColor,&#10;              letterSpacing: -0.4,&#10;              fontFamily: 'segoeui-bold',&#10;              height: 2&#10;          ),&#10;          bodyText2: TextStyle(&#10;              fontSize: 14.0,&#10;              color: DFontColorGrey,&#10;              letterSpacing: -0.4,&#10;              fontFamily: 'segoeui-bold',&#10;              height: 1.5&#10;          ),&#10;        ),&#10;      ),&#10;      themeMode: ThemeMode.system," description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="theme_ligth" value="theme: ThemeData(&#10;        backgroundColor: BackgroundColor,&#10;        primaryColor: AccentColor,&#10;        cardColor: SecondColor,&#10;        splashColor: FontColor,&#10;        textTheme: const TextTheme(&#10;          headline1: TextStyle(&#10;              fontSize: 22.0,&#10;              color: FontColor,&#10;              letterSpacing: -1.4,&#10;          ),&#10;          headline2: TextStyle(&#10;              fontSize: 14.0,&#10;              color: FontColorGrey,&#10;              letterSpacing: -1,&#10;          ),&#10;          headline3: TextStyle(&#10;              fontSize: 16.0,&#10;              color: FontColor,&#10;              letterSpacing: -0.5,&#10;              height: 2&#10;          ),&#10;          bodyText1: TextStyle(&#10;              fontSize: 15.0,&#10;              color: FontColor,&#10;              letterSpacing: -0.4,&#10;              height: 2&#10;          ),&#10;          bodyText2: TextStyle(&#10;              fontSize: 14.0,&#10;              color: FontColorGrey,&#10;              letterSpacing: -0.4,&#10;              height: 1.5&#10;          ),&#10;        ),&#10;      )," description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="fonts_in_pubspec" value="  fonts:&#10;    - family: segoeui-bold&#10;      fonts:&#10;        - asset: assets/fonts/segoeuib.ttf&#10;&#10;    - family: segoeui-light&#10;      fonts:&#10;        - asset: assets/fonts/segoeuil.ttf&#10;&#10;    - family: segoeui-regular&#10;      fonts:&#10;        - asset: assets/fonts/segoeui.ttf&#10;&#10;    - family: segoeui-semibold&#10;      fonts:&#10;          - asset: assets/fonts/seguisb.ttf" description="add fonts in pubspec.yaml" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+      <option name="XML_ATTRIBUTE" value="false" />
+      <option name="c" value="false" />
+      <option name="cpp" value="false" />
+      <option name="objc" value="false" />
+    </context>
+  </template>
+  <template name="paddonly" value="Padding(&#10;  padding: EdgeInsets.only(left: $left$, right: $right$, top: $top$, bottom: $bottom$),&#10;  child: $child$,&#10;)" toReformat="false" toShortenFQNames="true">
+    <variable name="left" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="right" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="top" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="bottom" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="child" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="siz" value="SizedBox(&#10;  height: $size$,&#10;)," toReformat="false" toShortenFQNames="true">
+    <variable name="size" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="algstart" value="mainAxisAlignment: MainAxisAlignment.start,&#10;crossAxisAlignment: CrossAxisAlignment.start," toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+</templateSet>

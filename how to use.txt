@@ -1,0 +1,12 @@
+The templates list in android studio save in a archive .xml, this archive is saved in the nex location:
+
+C:\Users\$user$\AppData\Roaming\Google\$Android studio version$\templates\
+
+Example:
+
+C:\Users\Admin\AppData\Roaming\Google\AndroidStudio2021.2\templates\
+
+For use this list of templates only copy the archive Flutter.xml in this location, or run "installtemplatesflutter.bat", in case of version of android studio is different your have remplace the version in this archive or copy manual in the software data location.
+
+
+In case of modification or add new templates your hace backup of archive Flutter.xml with "bakuptemplastes.bat", in case of change the version modificate the archive manual or edit the line comand in "bakuptemplastes.bat"
